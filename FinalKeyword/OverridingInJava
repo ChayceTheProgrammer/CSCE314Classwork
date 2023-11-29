@@ -1,0 +1,9 @@
+Overriding In Java is SIMILAR to Overloading in C++
+
+in C++ the 'virtual' keyword is used
+
+Subclass has a method/function with the same name and (possibly parameters) as in the super/base/parent class
+-usually a constructor of sorts
+
+Also remember member/method visibility
+-private in base cannot be accessed by subclass

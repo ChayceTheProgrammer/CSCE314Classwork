@@ -1,0 +1,11 @@
+Inheritance:
+
+Public (UML +): Access Data Members via Subclass Functions
+
+Private (UML -): Not Accessible via subclass functions,
+				 -ONLY available with accessor methods, setters, getters, etc...
+
+Protected (UML #): Direct Access ONLY with subclass functions
+				   -Items Shared within a famliy
+
+Protected (final): The only INSTANCE of the current function/variable
