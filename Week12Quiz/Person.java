@@ -19,7 +19,7 @@ public class Person {
 	}
 
 	public static void main(String args[]) {
-		Person p1 = new Person("P1");
+		// Person p1 = new Person("P1");
 		Person p2 = new Person("P1");
 		Person p3 = new Person("P3");
 		Person p4 = new Person("P4");

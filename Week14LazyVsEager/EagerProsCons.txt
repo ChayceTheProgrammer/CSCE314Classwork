@@ -1,0 +1,53 @@
+Eager evaluation, also known as strict evaluation, 
+is a strategy in which expressions are evaluated as 
+soon as they are bound to variables. Here are some 
+pros and cons of eager evaluation:
+
+Pros:
+Predictable Behavior: Eager evaluation provides a predictable order of execution. 
+The order in which expressions are evaluated is explicit and follows the sequence 
+of statements in the code.
+
+Early Error Detection: Eager evaluation can help detect errors early 
+in the program execution. If there are issues with expressions or variable values, 
+they are typically identified at the point of evaluation.
+
+Memory Usage: Eager evaluation can be memory-efficient in some cases. 
+Once an expression is evaluated, the intermediate results can be discarded, 
+potentially reducing memory usage compared to strategies that retain all intermediate results.
+
+Performance Optimization: In some scenarios, eager evaluation allows for better 
+optimization by the compiler or runtime environment. It can enable the application of 
+various optimization techniques, such as loop unrolling or inlining.
+
+Intuitive Debugging: Debugging is often more straightforward with eager evaluation because 
+the program state is updated immediately after each statement is executed, making it easier to 
+track and understand the flow of execution.
+
+Cons:
+
+Inefficiency with Unused Values: Eager evaluation may lead to inefficiencies when evaluating
+expressions that result in values that are not ultimately used in the program. This can result
+in unnecessary computation.
+
+Limited Support for Infinite Data Structures: Eager evaluation may struggle with infinite 
+data structures or lazy computations, as it attempts to evaluate all elements or operations 
+immediately, leading to potential issues with infinite loops or memory exhaustion.
+
+Reduced Laziness: Eager evaluation is inherently less lazy compared to lazy evaluation. 
+Laziness can be beneficial in situations where not all computations are needed or where the cost 
+of computation is high.
+
+Potential for Unnecessary Work: In some cases, eager evaluation might perform unnecessary 
+work by evaluating expressions that do not contribute to the final result. This can be a drawback 
+in scenarios where computation is expensive.
+
+Harder to Express Control Flow: Eager evaluation may make it more challenging to express certain 
+control flow patterns or advanced programming constructs. Lazy evaluation can provide more flexibility
+ in composing computations.
+
+In summary, while eager evaluation offers predictability, early error detection, 
+and certain performance advantages, it may also introduce inefficiencies, especially 
+when dealing with unused values or infinite data structures. The choice between eager and lazy 
+evaluation depends on the specific requirements and characteristics of the application or programming
+language.

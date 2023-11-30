@@ -1,0 +1,4 @@
+PC Stands for Program Counter (NOT PERSONAL COMPUTER)
+JVM is Needed For to run java programs
+Write Once Run anhwhere
+no deallocating memory

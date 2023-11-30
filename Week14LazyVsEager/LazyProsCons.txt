@@ -1,0 +1,65 @@
+Lazy evaluation, also known as call-by-need, is an evaluation 
+strategy that delays the evaluation of an expression until its 
+value is actually needed. This approach has both advantages and disadvantages:
+
+Pros of Lazy Evaluation:
+
+Efficiency in Handling Infinite Data Structures:
+Lazy evaluation is particularly useful when dealing with potentially infinite 
+data structures. It allows you to represent and work with infinite sequences 
+without the need to compute all elements in advance.
+
+Efficient Use of Resources:
+
+Lazy evaluation can save resources by only evaluating what is necessary.
+This is beneficial when dealing with large data sets or computations where 
+not all elements or results are needed.
+
+Improved Performance in Some Cases:
+Lazy evaluation can lead to performance improvements in situations 
+where not all computations are required. By delaying the evaluation 
+until the result is needed, unnecessary work can be avoided.
+
+Support for Composition of Functions:
+Lazy evaluation facilitates the composition of functions, as computations 
+are deferred until necessary. This supports the creation of modular and reusable code.
+
+Memoization Opportunities:
+Lazy evaluation provides opportunities for memoization, where the results of expensive
+function calls are cached and reused when the same computation is needed again. This can 
+improve performance in certain scenarios.
+
+Simplifies Control Flow:
+Lazy evaluation can simplify control flow, making it easier to express complex 
+logic in a more concise and readable manner.
+
+Cons of Lazy Evaluation:
+
+Potential Space Leaks:
+Lazy evaluation can lead to space leaks, where unnecessary values are retained in memory. 
+If not managed properly, this can result in higher memory consumption than expected.
+
+Difficulty in Reasoning about Performance:
+Lazy evaluation can make it challenging to reason about the performance of a program 
+since the order of evaluation is not always obvious. This can make it harder to predict 
+the resource usage of a program.
+
+Debugging Complexity:
+Debugging lazy evaluation-based code can be more challenging due to the non-obvious order 
+of evaluation. It may be harder to trace back and understand the sequence of computations.
+
+Potential Overhead:
+Introducing lazy evaluation can sometimes introduce overhead, 
+especially if there's a need to manage thunks (unevaluated expressions) and their dependencies.
+
+Difficulty in Predicting Execution Time:
+Predicting the execution time of a lazy evaluation-based program can be difficult, 
+as the time at which computations occur depends on when the results are actually needed.
+Compatibility Issues:
+
+Lazy evaluation may not be suitable for all programming paradigms or algorithms, and 
+integrating lazy evaluation into existing codebases may require significant changes.
+In summary, lazy evaluation offers benefits in terms of efficiency and composability, 
+particularly in scenarios involving infinite data structures or complex functional composition.
+However, it comes with challenges related to space leaks, debugging, and predicting performance,
+and it may not be the best fit for all situations.
